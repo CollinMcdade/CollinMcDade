@@ -1,44 +1,18 @@
-<svg width="600" height="100" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Define a linear gradient for the rainbow effect -->
-    <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <!-- Color stops for the rainbow -->
-      <stop offset="0%" stop-color="#ff0000"/>    <!-- Red -->
-      <stop offset="14%" stop-color="#ff7f00"/>   <!-- Orange -->
-      <stop offset="28%" stop-color="#ffff00"/>   <!-- Yellow -->
-      <stop offset="42%" stop-color="#00ff00"/>   <!-- Green -->
-      <stop offset="56%" stop-color="#0000ff"/>   <!-- Blue -->
-      <stop offset="70%" stop-color="#4b0082"/>   <!-- Indigo -->
-      <stop offset="84%" stop-color="#9400d3"/>   <!-- Violet -->
-
-      <!-- Animate the gradient's position to create the shifting rainbow effect -->
-      <!-- The 'to' value should be the width of the SVG to ensure a seamless loop -->
-      <animateTransform
-        attributeName="gradientTransform"
-        type="translate"
-        from="0 0"
-        to="600 0"
-        dur="6s"
-        repeatCount="indefinite"
-        additive="sum"
-      />
-    </linearGradient>
-  </defs>
-
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
   <!-- Text element that will display the welcome message -->
   <!-- 'x' and 'y' define the starting position of the text -->
   <!-- 'font-family', 'font-size', 'font-weight' define the text style -->
-  <!-- 'fill' applies the rainbow gradient to the text -->
+  <!-- 'fill' now uses a static color (dark gray) instead of a gradient -->
   <!-- 'textLength' and 'lengthAdjust' are crucial for the typing effect -->
-  <text x="10" y="70" font-family="monospace" font-size="40" font-weight="bold" fill="url(#rainbowGradient)" textLength="0" lengthAdjust="spacingAndGlyphs">
-    Welcome to my profile!
+  <text x="10" y="70" font-family="monospace" font-size="40" font-weight="bold" fill="#333" textLength="0" lengthAdjust="spacingAndGlyphs">
+    Welcome to my github profile!
     <!-- Animate 'textLength' from 0 to the full width of the text to simulate typing -->
-    <!-- The 'to' value (580) is an estimated pixel width for the text at this font size -->
+    <!-- The 'to' value (780) is adjusted for the new, longer text -->
     <animate
       attributeName="textLength"
       from="0"
-      to="580"
-      dur="3.5s"
+      to="780"
+      dur="4.5s"
       fill="freeze"
     />
   </text>
