@@ -17,6 +17,7 @@
 
 ---
 
+<!--
 ## What I'm Listening To (Requires Spotify Setup)
 
 <p align="left">
