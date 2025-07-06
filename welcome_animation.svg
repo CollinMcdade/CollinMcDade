@@ -42,35 +42,4 @@
       fill="freeze"
     />
   </text>
-
-  <!-- Line element to simulate a blinking typing cursor -->
-  <!-- 'x1', 'y1', 'x2', 'y2' define the line's start and end points -->
-  <!-- 'stroke' and 'stroke-width' define the cursor's appearance -->
-  <line x1="10" y1="40" x2="10" y2="80" stroke="orange" stroke-width="3">
-    <!-- Animate the cursor's horizontal position to follow the typing text -->
-    <!-- 'from' and 'to' values match the text's animation duration -->
-    <animate
-      attributeName="x1"
-      from="10"
-      to="585"
-      dur="3.5s"
-      fill="freeze"
-    />
-    <animate
-      attributeName="x2"
-      from="10"
-      to="585"
-      dur="3.5s"
-      fill="freeze"
-    />
-    <!-- Animate the cursor's opacity to make it blink after typing is complete -->
-    <!-- 'begin' ensures it starts blinking only after the text is fully typed -->
-    <animate
-      attributeName="opacity"
-      values="0;1;0"
-      dur="0.75s"
-      repeatCount="indefinite"
-      begin="3.5s"
-    />
-  </line>
 </svg>
