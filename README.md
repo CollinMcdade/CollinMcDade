@@ -21,7 +21,7 @@
 ## What I'm Listening To (Requires Spotify Setup)
 
 <p align="left">
-  <img width="320" height="445" src="https://spotify-github-profile.kittinanx.com/api/view?uid=slayer565745&cover_image=true&theme=default&bar_color=ff0000&bar_color_cover=true">
+  <img width="320" height="445" src="https://spotify-github-profile.kittinanx.com/api/view?uid=UID_HERE&cover_image=true&theme=default&bar_color=ff0000&bar_color_cover=true">
 </p>
 
 ---
